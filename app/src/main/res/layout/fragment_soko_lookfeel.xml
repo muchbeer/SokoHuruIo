@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/size_byte"
+    android:paddingLeft="@dimen/size_word"
+    android:paddingRight="@dimen/size_word"
+    android:paddingTop="@dimen/size_byte"
+      android:minHeight="72dp"
+    android:background="@drawable/custom_movie_box_office">
+
+    <ImageView
+        android:id="@+id/sokoThumbnail"
+        android:layout_width="@dimen/movie_thumbnail_height"
+        android:layout_height="@dimen/movie_thumbnail_width"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sokoTitle"
+        style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/sokoThumbnail"
+        android:layout_marginLeft="56dp"
+        android:gravity="right"
+        android:padding="4dp"
+        android:text="Nexus 9"
+        android:textSize="27dp"
+        android:alpha="0.87"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sokoRating"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sokoTitle"
+        android:padding="4dp"
+        android:text="Moto wetu"
+        android:alpha="0.87"
+
+        android:textSize="27dp"/>
+
+</RelativeLayout>
